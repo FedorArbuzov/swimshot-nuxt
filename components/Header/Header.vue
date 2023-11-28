@@ -19,7 +19,13 @@
                                     >
                                         Москва, Зеленоград
                                     </div>
-
+                                    <div
+                                        class="header__location-content-text"
+                                        :class="[{ 'is-active': isKhimki }]"
+                                        @click="setLocation('khimki')"
+                                    >
+                                        Химки
+                                    </div>
                                     <div
                                         class="header__location-content-text"
                                         :class="[{ 'is-active': isSpb }]"

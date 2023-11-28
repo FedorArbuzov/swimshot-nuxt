@@ -87,9 +87,9 @@ export default {
 
     methods: {
         isPoolDisabled(pool) {
-            if (this.isEkb) return pool.isMsk || pool.isSpb;
-            if (this.isMsk) return pool.isEkb || pool.isSpb;
-            if (this.isSpb) return pool.isEkb || pool.isMsk;
+            // if (this.isEkb) return pool.isMsk || pool.isSpb;
+            // if (this.isMsk) return pool.isEkb || pool.isSpb;
+            // if (this.isSpb) return pool.isEkb || pool.isMsk;
 
             return false;
         },

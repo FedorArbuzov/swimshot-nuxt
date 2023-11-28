@@ -1,4 +1,4 @@
-import { mskContacts, ekbContacts, spbContacts } from '~/static/js/poolsInfo.js';
+import { mskContacts, ekbContacts, spbContacts, khimkiContacts } from '~/static/js/poolsInfo.js';
 import { socialLinksHeader, socialLinksHeaderEkb, socialLinksHeaderSpb } from '~/static/js/links.js';
 import { socialLinksContactForm, socialLinksContactFormEkb, socialLinksContactFormSpb } from '~/static/js/links.js';
 
@@ -9,11 +9,13 @@ export default {
             ekbTitle: 'Екатеринбург',
             mskTitle: 'Москва, Зеленоград',
             spbTitle: 'Санкт-Петербург',
+            khimkiTitle: 'Химки',
             anotherTitle: 'Другой',
 
             coordsCenterMsk: [55.98180773463946, 37.199255310803],
             coordsCenterEkb: [56.839567, 60.550663],
             coordsCenterSpb: [59.918747, 30.344246],
+            coordsCenterKhimki: [55.899364, 37.460812]
         };
     },
 
@@ -24,6 +26,10 @@ export default {
 
         isMsk() {
             return this.currentLocation?.toLowerCase() === 'mow';
+        },
+
+        isKhimki() {
+            return this.currentLocation?.toLowerCase() === 'khimki';
         },
 
         isSpb() {
@@ -43,6 +49,7 @@ export default {
             if (this.isEkb) return this.ekbTitle;
             if (this.isMsk) return this.mskTitle;
             if (this.isSpb) return this.spbTitle;
+            if (this.isKhimki) return this.khimkiTitle;
             if (this.isAnother) return this.anotherTitle;
 
             return '';
@@ -52,6 +59,8 @@ export default {
             if (this.isEkb || this.pathName === '/ekb') return ekbContacts;
 
             if (this.isSpb || this.pathName === '/spb') return spbContacts;
+
+            if (this.isKhimki || this.pathName === '/khimki') return khimkiContacts;
 
             return mskContacts;
         },
@@ -85,6 +94,7 @@ export default {
             if (this.pathName === '/orbita') return this.coordsCenterMsk;
             if (this.pathName === '/ekb') return this.coordsCenterEkb;
             if (this.pathName === '/spb') return this.coordsCenterSpb;
+            if (this.pathName === '/khimki') return this.coordsCenterKhimki;
 
             if (this.isEkb) return this.coordsCenterEkb;
             if (this.isSpb) return this.coordsCenterSpb;
@@ -113,6 +123,9 @@ export default {
 
             if (currentLocation.toLowerCase() == 'st.-petersburg' || currentLocation.toLowerCase() == 'spb')
                 settingLocation = 'spb';
+
+            if (currentLocation.toLowerCase() == 'khimki' || currentLocation.toLowerCase() == 'khimki')
+                settingLocation = 'khimki';
 
             this.currentLocation = settingLocation;
 

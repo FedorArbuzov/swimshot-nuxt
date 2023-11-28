@@ -50,6 +50,10 @@ export default {
                 return [...this.PoolsArr.filter((pool) => pool.isMsk), ...this.PoolsArr.filter((pool) => !pool.isMsk)];
             }
 
+            if (this.isKhimki) {
+                return [...this.PoolsArr.filter((pool) => pool.isKhimki), ...this.PoolsArr.filter((pool) => !pool.isKhimki)];
+            }
+
             return this.PoolsArr;
         },
     },

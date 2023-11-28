@@ -795,6 +795,49 @@ export const schedule = {
                 },
             ],
         },
+        {
+            id: 'khimki',
+            all: [
+                {
+                    id: 'all',
+                    type: ['group'],
+                    label: 'Для всех',
+                    info: 'Тренер занимается с детьми и взрослыми любого возраста и уровня подготовки. При надобности занятия проходят из воды',
+
+                    groupDays: [
+                        {
+                            id: 1,
+                            time: ['17:00', '21:00'],
+                        },
+                        {
+                            id: 2,
+                            time: ['17:00', '21:00'],
+                        },
+                        {
+                            id: 3,
+                            time: ['17:00', '21:00'],
+                        },
+                        {
+                            id: 4,
+                            time: ['17:00', '21:00'],
+                        },
+                        {
+                            id: 5,
+                            time: ['17:00', '21:00'],
+                        },
+                        {
+                            id: 6,
+                            time: ['9:00', '19:00'],
+                        },
+                        {
+                            id: 7,
+                            time: ['9:00', '19:00'],
+                        },
+                    ],
+                },
+            ],
+        },
+
     ],
 };
 
@@ -828,6 +871,7 @@ export const price = {
 import orbita from '~/assets/jpg/pools/pool_orbita_3.jpg';
 import ph1801 from '~/assets/jpg/pools/1801.jpg';
 import ekb from '~/assets/jpg/pools/verh_istesky_1.jpg';
+import khimki from '~/assets/jpg/pools/pool_khimki.jpg';
 import spb from '~/assets/jpg/pools/pool_spb.jpg';
 
 export const poolsList = [
@@ -840,6 +884,15 @@ export const poolsList = [
         badge: 'свободное плавание',
         home: true,
         isMsk: true,
+    },
+    {
+        id: 'khimki',
+        title: 'Swim Shot',
+        subtitle: 'Химки',
+        pic: khimki,
+        href: '/khimki',
+        new: true,
+        isKhimi: true,
     },
     {
         id: 'orbita',
@@ -867,7 +920,7 @@ export const poolsList = [
         href: '/ekb',
         new: true,
         isEkb: true,
-    },
+    }
 ];
 
 export const mskContacts = {
@@ -894,5 +947,15 @@ export const spbContacts = {
     vk: 'https://vk.com/swim_shot_spb',
     tg: 'https://t.me/swim_shot_spb',
     inst: 'https://instagram.com/swim_shot_spb',
+    email: 'swim_shot@mail.ru',
+};
+
+
+export const khimkiContacts = {
+    tel: '+74993026123',
+    phone: ' +7 (499) 302-61-23',
+    vk: ' https://vk.com/swim_shot_khimki',
+    tg: 'https://t.me/swim_shot_khimki',
+    inst: 'https://instagram.com/swim_shot_khimki',
     email: 'swim_shot@mail.ru',
 };

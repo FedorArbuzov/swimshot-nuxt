@@ -32,12 +32,15 @@ export default {
         async submitForm() {
             this.$v.$touch();
             if (this.$v.$invalid) return;
-
+            console.log('submit');
             if (this.modalComment) this.form.comment = `Хочу к тренеру: ${this.modalComment}`;
             if (this.isEkb || this.pathName === '/ekb') this.form.comment = 'ЕКАТЕРИНБУРГ';
             if (this.isSpb || this.pathName === '/spb') this.form.comment = 'САНКТ-ПЕТЕРБУРГ';
+            if (this.isKhimki || this.pathName === '/khimki') this.form.comment = 'ХИМКИ';
+            
 
             this.formState.isLoading = true;
+            console.log(JSON.stringify(this.form))
 
             await fetch('https://cloud.1c.fitness/api/hs/lead/Webhook/6cdcce9e-6824-11ed-da8f-00505683b2c0', {
                 method: 'POST',
