@@ -685,40 +685,6 @@ export const schedule = {
         },
 
         {
-            id: 'orbita',
-            children: [
-                {
-                    id: 'child-u6',
-                    type: ['group', 'personal'],
-                    label: 'До 6 лет',
-                    info: 'Для деток до шести лет занятия проходят в бассейне СК Орбита. На групповых занятиях работают сразу два тренера из воды',
-
-                    groupDays: [
-                        {
-                            id: 6,
-                            time: ['11:15', '12:00'],
-                        },
-                        {
-                            id: 7,
-                            time: ['13:30', '12:45'],
-                        },
-                    ],
-
-                    price: [
-                        {
-                            id: 1,
-                            amount: 5500,
-                        },
-                        {
-                            id: 2,
-                            amount: 9900,
-                        },
-                    ],
-                },
-            ],
-        },
-
-        {
             id: 'ekb',
             all: [
                 {
@@ -893,15 +859,6 @@ export const poolsList = [
         href: '/khimki',
         new: true,
         isKhimi: true,
-    },
-    {
-        id: 'orbita',
-        title: 'СК "Орбита"',
-        subtitle: 'Зеленоград',
-        pic: orbita,
-        href: '/orbita',
-        badge: 'для самых маленьких',
-        isMsk: true,
     },
     {
         id: 'spb',

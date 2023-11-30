@@ -45,7 +45,6 @@ import './styles.css';
 import 'viewerjs/dist/viewer.css';
 import { directive as viewer } from 'v-viewer';
 
-import photo_1 from '~/assets/jpg/photos/photo_1.jpg';
 import photo_2 from '~/assets/jpg/photos/photo_2.jpg';
 import photo_3 from '~/assets/jpg/photos/photo_3.jpg';
 import photo_4 from '~/assets/jpg/photos/photo_4.jpg';
@@ -57,9 +56,19 @@ import photo_9 from '~/assets/jpg/photos/photo_9.jpg';
 import photo_10 from '~/assets/jpg/photos/photo_10.jpg';
 import photo_11 from '~/assets/jpg/photos/photo_11.jpg';
 import photo_12 from '~/assets/jpg/photos/photo_12.jpg';
+import photo_13 from '~/assets/jpg/photos/photo_13.jpg';
+import photo_14 from '~/assets/jpg/photos/photo_14.jpg';
+import photo_15 from '~/assets/jpg/photos/photo_15.jpg';
+import photo_17 from '~/assets/jpg/photos/photo_17.jpg';
+import photo_18 from '~/assets/jpg/photos/photo_18.jpg';
+import photo_19 from '~/assets/jpg/photos/photo_19.jpg';
+import photo_20 from '~/assets/jpg/photos/photo_20.jpg';
+import photo_21 from '~/assets/jpg/photos/photo_21.jpg';
+import photo_22 from '~/assets/jpg/photos/photo_22.jpg';
+import photo_23 from '~/assets/jpg/photos/photo_23.jpg';
+import photo_24 from '~/assets/jpg/photos/photo_24.jpg';
 
 const photosArr = [
-    photo_1,
     photo_2,
     photo_3,
     photo_4,
@@ -71,6 +80,17 @@ const photosArr = [
     photo_10,
     photo_11,
     photo_12,
+    photo_13,
+    photo_14,
+    photo_15,
+    photo_17,
+    photo_18,
+    photo_19,
+    photo_20,
+    photo_21,
+    photo_22,
+    photo_23,
+    photo_24,
 ];
 
 const viewerOptions = { movable: false, button: true, navbar: true, title: false, keyboard: true, scalable: false };
