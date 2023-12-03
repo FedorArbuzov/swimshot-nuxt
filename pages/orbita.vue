@@ -3,7 +3,7 @@
         <SignNow />
         <PoolStartBlock title="СК Орбита" address="Зеленоград, ул. Озерная аллея, 6" :photosArr="poolsPicArr" />
         <PoolTabs :littlePool="littlePool" :bigPool="[]" littleActive data-aos="fade-up" />
-        <ScheduleLink text="Расписание бассейна СК Орбита" pool="orbita" />
+        <!-- <ScheduleLink text="Расписание бассейна СК Орбита" pool="orbita" /> -->
         <div class="container" data-aos="fade-up">
             <div class="pools-info">
                 <p class="pools-info__text">

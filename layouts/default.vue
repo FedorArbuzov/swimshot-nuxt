@@ -14,7 +14,7 @@
 
         <ContactForm @formSubmit="onCloseModal" />
 
-        <ModalContact :open="isContactModalOpen" @closeModal="onCloseModal" :modalComment="modalComment" />
+        <ModalContact id="form" :open="isContactModalOpen" @closeModal="onCloseModal" :modalComment="modalComment" />
     </div>
 </template>
 

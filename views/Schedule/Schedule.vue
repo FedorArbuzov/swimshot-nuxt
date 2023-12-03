@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div v-if="active.pool && activeAgeOptions && activeAgeOptions.length" class="schedule__list">
+        <!-- <div v-if="active.pool && activeAgeOptions && activeAgeOptions.length" class="schedule__list">
             <div
                 v-for="(age, index) in activeAgeOptions"
                 :key="index"
@@ -370,7 +370,7 @@
         <h3 v-else class="text-subheader schedule__title bg-grey schedule__content schedule__end-text">
             Выбери <b>{{ computedWord }}</b
             >, чтобы увидеть расписание
-        </h3>
+        </h3> -->
     </div>
 </template>
 

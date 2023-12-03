@@ -11,7 +11,7 @@
             <PoolsFeatures data-aos="fade-up" :PoolsFeatures="poolFeatures" alone />
         </div>
 
-        <ScheduleLink text="Расписание бассейна Swim Shot в Санкт-Петербурге" pool="spb" />
+        <!-- <ScheduleLink text="Расписание бассейна Swim Shot в Санкт-Петербурге" pool="spb" /> -->
 
         <div class="container" data-aos="fade-right">
             <div class="pools-info">

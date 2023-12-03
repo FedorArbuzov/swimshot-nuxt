@@ -141,6 +141,29 @@ fieldset {
     border: none;
 }
 
+.schedule-info,
+.schedule-info-message {
+    font-size: 22px !important;
+    margin: 0 auto;
+    padding-top: calc(var(--gs) * 6);
+    font-family: var(--font-circe) !important;
+    text-align: center;
+}
+
+.schedule-info-message {
+    padding: 0 0 30px;
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: dashed;
+        }
+    }
+}
+
 .pools-info {
     font-size: 20px !important;
     max-width: 900px !important;

@@ -10,12 +10,15 @@
             <PoolsFeatures data-aos="fade-up" :PoolsFeatures="poolFeatures" alone />
         </div>
 
-        <ScheduleLink text="Расписание бассейна 'Swim Shot Химки'" pool="khimki" />
+        <!-- <ScheduleLink text="Расписание бассейна 'Swim Shot Химки'" pool="khimki" /> -->
 
         <div class="container" data-aos="fade-right">
+
+            <p class="schedule-info">Групповые и персональные тренировки для детей проходят по будням с 17 до 21 и по выходным с 9 до 19. Оставляй заявку, и мы точно подберем максимально удобное время для тебя.</p>
+
             <div class="pools-info">
                 <p class="pools-info__text">
-                    Бассейн находится в Химках, в 5 минутах от станции.
+                    Бассейн находится в 7 минутах пешком от железнодорожной станции “Химки” в частной школе “Форум”
                 </p>
                 <p class="pools-info__text">
                     Это новый, уютный, красивый и просторный двадцати пяти метровый бассейн. 
@@ -53,7 +56,7 @@ import PoolPic2 from '~/assets/jpg/pools/khimki_pool_2.jpg';
 import PoolPic3 from '~/assets/jpg/pools/khimki_pool_3.jpg';
 import PoolPic4 from '~/assets/jpg/pools/khimki_pool_4.jpg';
 
-const poolsPicArr = [PoolPic1, PoolPic2, PoolPic3, PoolPic4];
+const poolsPicArr = [PoolPic3, PoolPic1, PoolPic2, PoolPic4];
 
 const poolFeatures = [
     {
@@ -61,8 +64,16 @@ const poolFeatures = [
         text: 'от 6500 в месяц',
     },
     {
+        title: 'Стоимость персональных',
+        text: 'от 4500 за тренировку',
+    },
+    {
+        title: 'Стоимость без тренера',
+        text: 'от 4500 за тренировку',
+    },
+    {
         title: 'Для кого?',
-        text: 'для детей от 5 до 17 лет',
+        text: 'для детей от 3 до 17 лет',
     },
     {
         title: 'Глубина',
@@ -78,7 +89,7 @@ const poolFeatures = [
     },
     {
         title: 'Температура воды',
-        text: '28 градусов',
+        text: '29-30 градусов',
     },
 ];
 
