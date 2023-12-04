@@ -6,7 +6,6 @@
             и качество воды комфортные для плавания в любом возрасте. Переходи на страницу бассейна ниже, и выбери
             наиболее подходящий для тебя по расположению, стоимости и прочим условиям
         </h3>
-        <ScheduleLink border />
         <div class="pools__list" data-aos="fade-up">
             <nuxt-link
                 v-for="(pool, index) in computedArr"

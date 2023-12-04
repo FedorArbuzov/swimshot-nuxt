@@ -2,7 +2,7 @@
     <div>
         <Schedule @trainerClick="onTrainerClick" />
 
-        <div class="schedule-info-message">Мы готовы предложить вам занятия почти в любое время. Чтобы подобрать максимально удобное для вас, оставьте заявку в <a href="form">форме</a></div>
+        <div class="schedule-info-message">Мы готовы предложить вам занятия почти в любое время. Чтобы подобрать максимально удобное для вас, оставьте заявку в <a href="#contact-form">форме</a></div>
 
         <ScheduleSales id="sales" />
 
