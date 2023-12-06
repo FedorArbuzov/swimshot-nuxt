@@ -117,12 +117,6 @@
                     </div>
                 </ymap-marker>
 
-                <ymap-marker :coords="coordsEkb" marker-id="3" hint-content="СК “Верх-Исетский”">
-                    <div class="another-pools__list-item-text" slot="balloon">
-                        <nuxt-link to="/ekb"> <b>СК “Верх-Исетский”</b>, Екатеринбург, ул. Кирова, 71</nuxt-link>
-                    </div>
-                </ymap-marker>
-
                 <ymap-marker :coords="coordsSpb" marker-id="4" hint-content="Swim Shot Санкт-Петербург">
                     <div class="another-pools__list-item-text" slot="balloon">
                         <nuxt-link to="/spb">ул. Константина Заслонова, 23, корп. 4</nuxt-link>

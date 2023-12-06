@@ -68,9 +68,6 @@ export default {
 
     computed: {
         computedArr() {
-            if (this.isEkb) {
-                return [...poolsList.filter((pool) => pool.isEkb), ...poolsList.filter((pool) => !pool.isEkb)];
-            }
 
             if (this.isSpb) {
                 return [...poolsList.filter((pool) => pool.isSpb), ...poolsList.filter((pool) => !pool.isSpb)];

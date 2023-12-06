@@ -869,15 +869,6 @@ export const poolsList = [
         new: true,
         isSpb: true,
     },
-    {
-        id: 'ekb',
-        title: 'СК “Верх-Исетский”',
-        subtitle: 'Екатеринбург',
-        pic: ekb,
-        href: '/ekb',
-        new: true,
-        isEkb: true,
-    }
 ];
 
 export const mskContacts = {

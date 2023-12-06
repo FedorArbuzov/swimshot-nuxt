@@ -6,7 +6,6 @@ export default {
     data() {
         return {
             currentLocation: null,
-            ekbTitle: 'Екатеринбург',
             mskTitle: 'Москва, Зеленоград',
             spbTitle: 'Санкт-Петербург',
             khimkiTitle: 'Химки',

@@ -35,14 +35,6 @@
                                     </div>
 
                                     <div
-                                        class="header__location-content-text"
-                                        :class="[{ 'is-active': isEkb }]"
-                                        @click="setLocation('sve')"
-                                    >
-                                        Екатеринбург
-                                    </div>
-
-                                    <div
                                         class="header__location-content-text header__location-content-text--another"
                                         :class="[{ 'is-active': isAnother }]"
                                         @click="setLocation('another')"
@@ -121,14 +113,6 @@
                                         @click="setLocation('mow')"
                                     >
                                         Москва, Зеленоград
-                                    </div>
-
-                                    <div
-                                        class="header__location-content-text"
-                                        :class="[{ 'is-active': isEkb }]"
-                                        @click="setLocation('sve')"
-                                    >
-                                        Екатеринбург
                                     </div>
 
                                     <div

@@ -34,7 +34,6 @@ export default {
             if (this.$v.$invalid) return;
             console.log('submit');
             if (this.modalComment) this.form.comment = `Хочу к тренеру: ${this.modalComment}`;
-            if (this.isEkb || this.pathName === '/ekb') this.form.comment = 'ЕКАТЕРИНБУРГ';
             if (this.isSpb || this.pathName === '/spb') this.form.comment = 'САНКТ-ПЕТЕРБУРГ';
             if (this.isKhimki || this.pathName === '/khimki') this.form.comment = 'ХИМКИ';
             

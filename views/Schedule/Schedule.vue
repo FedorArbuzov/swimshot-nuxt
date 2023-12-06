@@ -418,13 +418,6 @@ const poolsArr = [
         pic: spb,
         href: '/spb',
     },
-    {
-        id: 'ekb',
-        title: 'СК “Верх-Исетский”',
-        subtitle: 'Екатеринбург',
-        pic: ekb,
-        href: '/ekb',
-    },
 ];
 
 const defaultActive = {
